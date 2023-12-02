@@ -2,14 +2,14 @@
     "version": 2,
     "builds": [
       {
-        "src": "npm start", 
-        "use": "@vercel/node"
+        "src": "main.sh", 
+        "use": "@vercel/sh"
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "npm start"
+        "dest": "main.sh"
       }
     ]
   }
